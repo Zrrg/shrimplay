@@ -2,6 +2,8 @@
 [![GitHub Releases](https://img.shields.io/github/downloads/tsl0922/ImPlay/total)](https://github.com/tsl0922/ImPlay/releases)
 ![GitHub](https://img.shields.io/github/license/tsl0922/ImPlay)
 
+# This fork was made in educational purposes
+
 # ImPlay
 
 ImPlay is a Cross-Platform Desktop Media Player, built on top of [mpv](https://mpv.io) and [ImGui](https://github.com/ocornut/imgui).

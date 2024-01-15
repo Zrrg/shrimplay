@@ -24,7 +24,7 @@
 #include "helpers/nfd.h"
 #include "helpers/utils.h"
 
-#define PLAYER_NAME "ImPlay"
+#define PLAYER_NAME "shrimplay"
 
 namespace ImPlay {
 class Player {
