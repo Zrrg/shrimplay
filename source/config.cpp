@@ -9,7 +9,7 @@
 namespace ImPlay {
 Config::Config() {
   auto path = dataPath();
-  auto file = path / "implay.conf";
+  auto file = path / "shrimplay.conf";
 
   std::filesystem::create_directories(path);
 

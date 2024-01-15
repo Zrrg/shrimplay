@@ -6,7 +6,7 @@ include(GetGitVersion)
 
 get_git_version(GIT_VERSION SEM_VER)
 
-project(ImPlay VERSION "${SEM_VER}")
+project(shrimplay VERSION "${SEM_VER}")
 set(CMAKE_CXX_STANDARD 20)
 
 include(CMakeDependentOption)
@@ -97,7 +97,7 @@ else()
   include(GNUInstallDirs)
   install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
   if(UNIX AND NOT APPLE)
-    install(FILES ${PROJECT_SOURCE_DIR}/resources/linux/implay.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
-    install(FILES ${PROJECT_SOURCE_DIR}/resources/icon.png DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pixmaps RENAME implay.png)
+    install(FILES ${PROJECT_SOURCE_DIR}/resources/linux/shrimplay.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
+    install(FILES ${PROJECT_SOURCE_DIR}/resources/icon.png DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/pixmaps RENAME shrimplay.png)
   endif()
 endif()
