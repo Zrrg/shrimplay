@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -26,7 +26,7 @@
 
 #define PLAYER_NAME "shrimplay"
 
-namespace ImPlay {
+namespace shrimplay {
 class Player {
  public:
   explicit Player(Config *config);
@@ -173,4 +173,4 @@ class Player {
     Player *p;
   };
 };
-}  // namespace ImPlay
+}  // namespace shrimplay

@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -7,7 +7,7 @@
 #include <vector>
 #include "view.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 class ContextMenu : public View {
  public:
   using View::View;
@@ -38,4 +38,4 @@ class ContextMenu : public View {
   void drawProfilelist();
   void drawRecentFiles();
 };
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -16,7 +16,7 @@
 #include <GLFW/glfw3native.h>
 #include <condition_variable>
 
-namespace ImPlay {
+namespace shrimplay {
 class Window : Player {
  public:
   explicit Window(Config *config);
@@ -161,4 +161,4 @@ class Window : Player {
   };
   // clang-format on
 };
-}  // namespace ImPlay
+}  // namespace shrimplay

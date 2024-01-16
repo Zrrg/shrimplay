@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -8,7 +8,7 @@
 #include <imgui.h>
 #include <inipp.h>
 
-namespace ImPlay {
+namespace shrimplay {
 struct ConfigData {
   struct Interface_ {
     std::string Lang = "en-US";
@@ -96,4 +96,4 @@ class Config {
 
   std::vector<RecentItem> recentFiles;
 };
-}  // namespace ImPlay
+}  // namespace shrimplay

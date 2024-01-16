@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #define STB_IMAGE_IMPLEMENTATION
@@ -48,7 +48,7 @@ void ImGui::Hyperlink(const char* label, const char* url) {
   ImGui::PushStyleColor(ImGuiCol_Text, style.Colors[ImGuiCol_CheckMark]);
   ImGui::Text("%s", label ? label : url);
   if (ImGui::IsItemHovered()) ImGui::SetMouseCursor(ImGuiMouseCursor_Hand);
-  if (ImGui::IsItemClicked()) ImPlay::openUrl(url);
+  if (ImGui::IsItemClicked()) shrimplay::openUrl(url);
   ImGui::PopStyleColor();
 }
 

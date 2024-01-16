@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <cstdarg>
@@ -8,7 +8,7 @@
 #include "helpers/imgui.h"
 #include "views/debug.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 Debug::Debug(Config* config, Mpv* mpv) : View(config, mpv) { console = new Console(mpv); }
 
 Debug::~Debug() { delete console; }
@@ -595,4 +595,4 @@ int Debug::Console::TextEditCallback(ImGuiInputTextCallbackData* data) {
   }
   return 0;
 }
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

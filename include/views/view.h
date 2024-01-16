@@ -1,11 +1,11 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
 #include "config.h"
 #include "mpv.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 class View {
  public:
   View(Config *config, Mpv *mpv);
@@ -20,4 +20,4 @@ class View {
   Mpv *mpv = nullptr;
   bool m_open = false;
 };
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

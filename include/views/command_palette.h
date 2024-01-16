@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -8,7 +8,7 @@
 #include <vector>
 #include "view.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 class CommandPalette : public View {
  public:
   CommandPalette(Config *config, Mpv *mpv);
@@ -38,4 +38,4 @@ class CommandPalette : public View {
   bool focusInput = false;
   bool justOpened = false;
 };
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

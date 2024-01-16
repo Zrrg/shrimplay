@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <filesystem>
@@ -6,7 +6,7 @@
 #include "config.h"
 #include "helpers/utils.h"
 
-namespace ImPlay {
+namespace shrimplay {
 Config::Config() {
   auto path = dataPath();
   auto file = path / "shrimplay.conf";
@@ -136,4 +136,4 @@ std::string Config::ipcSocket() {
   return configDir + "/mpv-ipc-socket";
 #endif
 }
-}  // namespace ImPlay
+}  // namespace shrimplay

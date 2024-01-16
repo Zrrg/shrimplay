@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <fonts/fontawesome.h>
@@ -6,7 +6,7 @@
 #include "theme.h"
 #include "views/context_menu.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 void ContextMenu::draw() {
   if (m_open) {
     ImGui::OpenPopup("##context_menu");
@@ -386,4 +386,4 @@ void ContextMenu::drawRecentFiles() {
     ImGui::EndMenu();
   }
 }
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

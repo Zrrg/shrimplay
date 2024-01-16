@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <algorithm>
@@ -15,7 +15,7 @@
 #endif
 #include "helpers/utils.h"
 
-namespace ImPlay {
+namespace shrimplay {
 void OptionParser::parse(int argc, char** argv) {
   bool optEnd = false;
 #ifdef _WIN32
@@ -144,4 +144,4 @@ bool findCase(std::string haystack, std::string needle) {
                         [](char ch1, char ch2) { return std::toupper(ch1) == std::toupper(ch2); });
   return it != haystack.end();
 }
-}  // namespace ImPlay
+}  // namespace shrimplay

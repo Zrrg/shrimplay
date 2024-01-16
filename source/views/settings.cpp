@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <algorithm>
@@ -11,7 +11,7 @@
 #include "theme.h"
 #include "views/settings.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 void Settings::show() {
   data = config->Data;
   m_open = true;
@@ -272,4 +272,4 @@ void Settings::drawFontTab() {
     ImGui::EndTabItem();
   }
 }
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

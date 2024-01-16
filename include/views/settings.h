@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -6,7 +6,7 @@
 #include <vector>
 #include "view.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 class Settings : public View {
  public:
   using View::View;
@@ -22,4 +22,4 @@ class Settings : public View {
   ConfigData data;
   std::vector<std::function<void()>> appliers;
 };
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

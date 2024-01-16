@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -9,7 +9,7 @@
 #include <mpv/client.h>
 #include <mpv/render_gl.h>
 
-namespace ImPlay {
+namespace shrimplay {
 typedef void *(*GLAddrLoadFunc)(const char *name);
 class Mpv {
  public:
@@ -141,4 +141,4 @@ class Mpv {
   std::vector<std::tuple<mpv_event_id, EventHandler>> events;
   std::vector<std::tuple<std::string, mpv_format, EventHandler>> propertyEvents;
 };
-}  // namespace ImPlay
+}  // namespace shrimplay

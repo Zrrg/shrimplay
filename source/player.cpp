@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <filesystem>
@@ -15,7 +15,7 @@
 #include "theme.h"
 #include "player.h"
 
-namespace ImPlay {
+namespace shrimplay {
 Player::Player(Config *config) : config(config) {
   mpv = new Mpv();
 
@@ -680,4 +680,4 @@ bool Player::isSubtitleFile(std::string file) {
   if (std::find(subtitleTypes.begin(), subtitleTypes.end(), ext) != subtitleTypes.end()) return true;
   return false;
 }
-}  // namespace ImPlay
+}  // namespace shrimplay

@@ -1,11 +1,11 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include "helpers/utils.h"
 #include "helpers/imgui.h"
 #include "views/about.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 void About::draw() {
   if (m_open) ImGui::OpenPopup("views.about.title"_i18n);
 
@@ -13,14 +13,14 @@ void About::draw() {
   ImGui::SetNextWindowPos(ImGui::GetMainViewport()->GetWorkCenter(), ImGuiCond_Appearing, ImVec2(0.5f, 0.5f));
   if (ImGui::BeginPopupModal("views.about.title"_i18n, &m_open, ImGuiWindowFlags_AlwaysAutoResize)) {
     if (ImGui::IsKeyDown(ImGuiKey_Escape)) m_open = false;
-    ImGui::TextCentered("ImPlay");
+    ImGui::TextCentered("shrimplay");
 #ifdef APP_VERSION
     ImGui::TextCentered(APP_VERSION, true);
 #endif
     ImGui::Spacing();
     ImGui::TextCentered("views.about.desc"_i18n);
     ImGui::NewLine();
-    const char *link = "https://github.com/tsl0922/ImPlay";
+    const char *link = "https://github.com/Zrrg/shrimplay";
     ImGui::HalignCenter(link);
     ImGui::Hyperlink(nullptr, link);
     ImGui::Spacing();
@@ -31,4 +31,4 @@ void About::draw() {
   }
   ImGui::PopStyleVar();
 }
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

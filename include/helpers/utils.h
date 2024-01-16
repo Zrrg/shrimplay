@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -15,7 +15,7 @@
 #include <imgui_internal.h>
 #include "lang.h"
 
-namespace ImPlay {
+namespace shrimplay {
 struct OptionParser {
   std::map<std::string, std::string> options;
   std::vector<std::string> paths;
@@ -72,4 +72,4 @@ inline std::string join(std::vector<std::string> v, std::string_view sep) {
 std::vector<std::string> split(const std::string& str, const std::string& sep);
 
 bool findCase(std::string haystack, std::string needle);
-}  // namespace ImPlay
+}  // namespace shrimplay

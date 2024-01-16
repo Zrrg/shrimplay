@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <fstream>
@@ -7,7 +7,7 @@
 #include "helpers/utils.h"
 #include "helpers/lang.h"
 
-namespace ImPlay {
+namespace shrimplay {
 std::string LangData::get(std::string& key) {
   auto it = entries.find(key);
   if (it != entries.end()) return it->second;
@@ -126,4 +126,4 @@ std::string i18n(std::string key) {
   if (it != entries.end()) return it->second;
   return key;
 }
-}  // namespace ImPlay
+}  // namespace shrimplay

@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <algorithm>
@@ -7,7 +7,7 @@
 #include "helpers/imgui.h"
 #include "views/command_palette.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 CommandPalette::CommandPalette(Config* config, Mpv* mpv) : View(config, mpv) {
   providers["bindings"] = [=, this](const char*) {
     for (auto& item : mpv->bindings)
@@ -231,4 +231,4 @@ void CommandPalette::match(const std::string& input) {
   matches.clear();
   for (const auto& [item, _] : result) matches.push_back(item);
 }
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

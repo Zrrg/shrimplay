@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <stdexcept>
@@ -9,7 +9,7 @@
 #include <nlohmann/json.hpp>
 #include "mpv.h"
 
-namespace ImPlay {
+namespace shrimplay {
 Mpv::Mpv() {
   main = mpv_create();
   if (!main) throw std::runtime_error("could not create mpv handle");
@@ -295,4 +295,4 @@ void Mpv::initProfiles(const char *payload) {
       profiles.emplace_back(name);
   }
 }
-}  // namespace ImPlay
+}  // namespace shrimplay

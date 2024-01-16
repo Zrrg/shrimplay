@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <algorithm>
@@ -16,7 +16,7 @@
 #include "theme.h"
 #include "window.h"
 
-namespace ImPlay {
+namespace shrimplay {
 Window::Window(Config* config) : Player(config) {
   initGLFW();
   window = glfwCreateWindow(1280, 720, PLAYER_NAME, nullptr, nullptr);
@@ -473,4 +473,4 @@ void Window::Waiter::notify() {
   }
   cond.notify_one();
 }
-}  // namespace ImPlay
+}  // namespace shrimplay

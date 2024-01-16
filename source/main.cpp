@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #include <cstring>
@@ -28,7 +28,7 @@ static const char* usage =
     "\n"
     "Visit https://mpv.io/manual/stable to get full mpv options.\n";
 
-static int run_headless(ImPlay::OptionParser& parser) {
+static int run_headless(shrimplay::OptionParser& parser) {
   mpv_handle* ctx = mpv_create();
   if (!ctx) throw std::runtime_error("could not create mpv handle");
 
@@ -113,7 +113,7 @@ int main(int argc, char* argv[]) {
   }
 #endif
 
-  ImPlay::OptionParser parser;
+  shrimplay::OptionParser parser;
   parser.parse(argc, argv);
   if (parser.options.contains("help")) {
     fmt::print("{}", usage);
@@ -124,12 +124,12 @@ int main(int argc, char* argv[]) {
     if (parser.options.contains("o") || parser.check("video", "no") || parser.check("vid", "no"))
       return run_headless(parser);
 
-    ImPlay::Config config;
+    shrimplay::Config config;
     config.load();
 
     if (config.Data.Window.Single && send_ipc(config.ipcSocket(), parser.paths)) return 0;
 
-    ImPlay::Window window(&config);
+    shrimplay::Window window(&config);
     if (!window.init(parser)) return 1;
 
     window.run();

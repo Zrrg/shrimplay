@@ -1,4 +1,4 @@
-// Copyright (c) 2022-2023 tsl0922. All rights reserved.
+// Copyright (c) 2024 Zrrg. All rights reserved.
 // SPDX-License-Identifier: GPL-2.0-only
 
 #pragma once
@@ -6,7 +6,7 @@
 #include <map>
 #include <imgui.h>
 
-namespace ImPlay {
+namespace shrimplay {
 struct LangFont {
   std::string path;
   int size = 0;
@@ -48,4 +48,4 @@ inline std::string i18n_a(std::string key, T... args) {
   return fmt::vformat(i18n(key), fmt::make_format_args(args...));
 }
 inline LangStr operator""_i18n(const char* key, size_t) { return LangStr(key); }
-}  // namespace ImPlay
+}  // namespace shrimplay

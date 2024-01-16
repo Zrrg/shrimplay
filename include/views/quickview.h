@@ -3,7 +3,7 @@
 #include <vector>
 #include "view.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 class Quickview : public View {
  public:
   Quickview(Config *config, Mpv *mpv);
@@ -81,4 +81,4 @@ class Quickview : public View {
   int audioEqChannels = 2;
   bool audioEqEnabled = false;
 };
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views

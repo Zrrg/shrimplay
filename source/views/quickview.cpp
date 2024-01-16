@@ -4,7 +4,7 @@
 #include "helpers/imgui.h"
 #include "views/quickview.h"
 
-namespace ImPlay::Views {
+namespace shrimplay::Views {
 Quickview::Quickview(Config *config, Mpv *mpv) : View(config, mpv) {
   // clang-format off
   addTab("playlist", "views.quickview.playlist", [this]() { drawPlaylistTabContent(); });
@@ -537,4 +537,4 @@ std::string Quickview::AudioEqItem::toFilter(const char *name, int channels) {
   }
   return fmt::format("{}:lavfi=[anequalizer={}]", name, s);
 }
-}  // namespace ImPlay::Views
+}  // namespace shrimplay::Views
