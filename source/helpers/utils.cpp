@@ -125,7 +125,7 @@ std::filesystem::path dataPath() {
   else if (home != nullptr)
     dataDir = fmt::format("{}/.config", home);
 #endif
-  return std::filesystem::path(dataDir) / "implay";
+  return std::filesystem::path(dataDir) / "shrimplay";
 }
 
 std::vector<std::string> split(const std::string& str, const std::string& sep) {
