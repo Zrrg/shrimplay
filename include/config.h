@@ -29,8 +29,8 @@ struct ConfigData {
     bool operator==(const Mpv_&) const = default;
   } Mpv;
   struct Window_ {
-    bool Save = false;
-    bool Single = false;
+    bool Save = true;
+    bool Single = true;
     int X = 0, Y = 0;
     int W = 0, H = 0;
     bool operator==(const Window_&) const = default;
